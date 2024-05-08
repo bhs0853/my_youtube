@@ -1,0 +1,35 @@
+{
+  "name": "my_youtube",
+  "version": "1.0.0",
+  "description": "This webapp is a YouTube clone",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bhs0853/my_youtube.git"
+  },
+  "keywords": [
+    "youtube",
+    "videos",
+    "camera"
+  ],
+  "author": "Hema Sai Bonda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bhs0853/my_youtube/issues"
+  },
+  "homepage": "https://github.com/bhs0853/my_youtube#readme",
+  "devDependencies": {
+    "parcel": "^2.12.0",
+    "postcss": "^8.4.38",
+    "process": "^0.11.10",
+    "tailwindcss": "^3.4.3"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}
