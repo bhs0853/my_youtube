@@ -4,7 +4,6 @@ import { YOUTUBE_DATA_API } from "../config";
 
 const useHomePageVideos = () => {
     const videoCategory = useSelector(store => store.menu.videoCategory);
-    console.log(videoCategory);
     const [videoData,setVideoData] = useState([]);
     useEffect(()=>{
         getData();
@@ -13,9 +12,9 @@ const useHomePageVideos = () => {
         const data = await fetch(YOUTUBE_DATA_API+videoCategory);
         const jsonData =await data.json();
         // console.log(YOUTUBE_DATA_API);
-        console.log(jsonData.items);
+        // console.log(jsonData.items);
         setVideoData(jsonData?.items);
-        console.log(YOUTUBE_DATA_API+videoCategory);
+        // console.log(YOUTUBE_DATA_API+videoCategory);
     }
     return videoData;
 }

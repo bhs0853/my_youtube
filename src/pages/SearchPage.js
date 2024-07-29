@@ -7,7 +7,6 @@ import useGetSearchResults from "../utils/helpers/useGetSearchResults";
 const SearchPage = () => {
   const [searchParams] = useSearchParams();
   const query = searchParams.get("search_query");
-  // console.log(videoData);
   const videosList = useGetSearchResults(query);
   if(videosList==null || videosList.length <=1 || videosList == undefined){
     return <SearchPageShimmer/>

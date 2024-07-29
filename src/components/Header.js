@@ -68,7 +68,6 @@ const Header = () => {
     ];
     const data = await fetch(SEARCH_SUGGESTIONS_API+searchText);
     const json = await data.json();
-    console.log(json[1]);
     setSuggestions(json[1].splice(0,7));
     dispatch(cacheResults({
       [searchText]:json[1],
@@ -78,7 +77,7 @@ const Header = () => {
     <div className="bg-black flex h-14 w-full px-7 justify-between fixed">
       <div className='flex'>
         <img src={HamburgerIcon} className="my-auto cursor-pointer" key="hamburger" onClick={()=>handleToggleMenu()}></img>
-        <Link to="/"><img src={YouTubeLogo} className='mx-5 h-16 w-20'></img></Link>
+        <Link to="/"><img src={YouTubeLogo} className='mx-5 pt-4 h-12 w-20'></img></Link>
       </div>
       <div className='my-auto  flex w-2/5'>
         <div className='border-lightgray border h-9 rounded-l-3xl w-full bg-searchbackground text-white'>

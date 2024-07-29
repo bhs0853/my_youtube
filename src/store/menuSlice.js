@@ -4,7 +4,7 @@ const menuSlice = createSlice({
     name : "menu",
     initialState : {
         show : true,
-        videoCategory : 28,
+        videoCategory : 20,
     },
     reducers:{
         manageShow : (state) => {

@@ -4,10 +4,8 @@ import user from "../assests/user.png";
 import WatchPageShimmer from "./WatchPageShimmer";
 
 const VideoPlayerPage = (id) => {
-    console.log(id.id);
     const videoData = useGetVideoDetails(id.id); 
     if(videoData.length==0) return (<WatchPageShimmer/>);
-    console.log(videoData?.items[0]);
     const {title, channelTitle} = videoData?.items[0]?.snippet;
     const {likeCount} = videoData?.items[0]?.statistics;
     return(

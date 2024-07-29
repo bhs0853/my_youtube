@@ -35,11 +35,11 @@ const HamburgerMenu = function(){
         <Link to="/">
         <div className="w-60 bg-black h-screen fixed overflow-scroll cursor-pointer">
             <div className="text-white mx-2 w-11/12 py-3">
-                <div className=" hover:bg-lightgray hover:rounded-lg text-sm my-auto bg-lightgray px-3 py-2 flex rounded-lg" onClick={() => updateVideoCategory(28)}>
+                <div className=" hover:bg-lightgray hover:rounded-lg text-sm my-auto bg-lightgray px-3 py-2 flex rounded-lg" onClick={() => updateVideoCategory(20)}>
                     <img src={Home}></img>
                     <span className=" pl-5 font-sans font-medium my-auto">Home</span>
                 </div>
-                <div className=" hover:bg-lightgray hover:rounded-lg text-sm my-auto px-3 py-2 flex ">
+                <div className=" hover:bg-lightgray hover:rounded-lg text-sm my-auto px-3 py-2 flex " onClick={() => updateVideoCategory(42)}>
                     <img src={Shorts}></img>
                     <span className=" pl-5 font-sans font-medium my-auto">Shorts</span>
                 </div>

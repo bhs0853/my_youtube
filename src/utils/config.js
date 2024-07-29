@@ -1,5 +1,5 @@
 
-const GOOGLE_API_KEY = "AIzaSyBsc_FXQa-Fq_gCH1npt0puVzxOGNB9lVc";
+const GOOGLE_API_KEY = process.env.YOUTUBE_API_KEY;
 
 //  export const SEARCH_SUGGESTIONS_API = `http://suggestqueries.google.com/complete/search?client=youtube&ds=yt&q=`;
 

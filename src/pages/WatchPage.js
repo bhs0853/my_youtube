@@ -9,7 +9,6 @@ import LiveChat from '../components/LiveChat.js';
 const WatchPage = () => {
   const [searchParams] = useSearchParams();
   const videoId = searchParams.get("v");
-  console.log(videoId);
   const dispatch = useDispatch();
   useEffect(()=>{
     dispatch(manageShow());
