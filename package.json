@@ -2,11 +2,12 @@
   "name": "my_youtube",
   "version": "1.0.0",
   "description": "This webapp is a YouTube clone",
-  "main": "index.js",
+  "source": "index.js",
   "type": "module",
   "scripts": {
     "start": "parcel index.html",
-    "test": "jest"
+    "test": "jest",
+    "build" : "parcel build index.html"
   },
   "repository": {
     "type": "git",
