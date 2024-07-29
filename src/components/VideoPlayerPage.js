@@ -6,10 +6,10 @@ import WatchPageShimmer from "./WatchPageShimmer";
 const VideoPlayerPage = (id) => {
     console.log(id.id);
     const videoData = useGetVideoDetails(id.id); 
-    // if(videoData.length==0) return (<WatchPageShimmer/>);
-    // console.log(videoData?.items[0]);
-    // const {title, channelTitle} = videoData?.items[0]?.snippet;
-    // const {likeCount} = videoData?.items[0]?.statistics;
+    if(videoData.length==0) return (<WatchPageShimmer/>);
+    console.log(videoData?.items[0]);
+    const {title, channelTitle} = videoData?.items[0]?.snippet;
+    const {likeCount} = videoData?.items[0]?.statistics;
     return(
         <div>
             <div>
@@ -18,7 +18,7 @@ const VideoPlayerPage = (id) => {
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                 allowFullScreen></iframe>
             </div>
-            {/* <div className="text-white px-3 w-3/5">
+            <div className="text-white px-3 w-full">
                 <div className="py-2 font-medium font-mono">{title}</div>
                 <div className="flex justify-between py-1">
                     <div className="flex gap-2">
@@ -44,7 +44,8 @@ const VideoPlayerPage = (id) => {
                         </div>
                     </div>
                 </div>
-            </div> */}
+            </div>
+            <hr className="mt-3"/>
         </div>
     );
 };

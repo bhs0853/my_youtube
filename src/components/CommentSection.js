@@ -30,7 +30,7 @@ const CommentsList = ({nestedComments}) => {
 }
 const CommentSection = () => {
   return (
-    <div className="mt-5">
+    <div className="mt-3">
       <div className="pb-5 text-xl font-medium">Comment Section:</div>
       <CommentsList nestedComments={nestedComments} key="commentlist"/>
     </div>
